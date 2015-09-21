@@ -1,0 +1,76 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+
+  
+}
+
+h1 {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+}
+
+body {
+	font-family: Garamond, serif;
+}
+
+.background {
+	max-width: 800px;
+	height: 850px;
+	background-image: url('../images/goldenberries.jpg');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-position: center;
+	border-radius: 10%;
+	opacity: .9;
+}
+
+.quizcontainer {
+	text-align: center;
+	max-width: 800px;
+	height: 850px;
+	color: ghostwhite;
+	border-radius: 10%;
+	padding: 30px;
+	text-shadow: 1px 1px 1px gold;
+	
+}
+
+#answerholder1, #answerholder2, #answerholder3, #answerholder4 {
+	max-width: 200px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: hsla(200, 50%, 50%, 0.5);
+	border-radius: 10px;
+	padding: 10px;
+
+}
+
+#answerholder1{
+	display: block;
+}
+
+#answerholder2, #answerholder3, #answerholder4{
+	display: none;
+}
+
+
+
+
+
+
+#buttonholder{
+	text-align: center;
+}
+
+button {
+	color: black;
+	border-radius: 5px;
+	margin-top: 10px;
+	
+}
+
+
