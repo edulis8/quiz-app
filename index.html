@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<h1>Goldenberry Quiz</h1>
-		<div class="counter"><p>Score:<span id='num-correct'>0</span>/4</p></div>
+		
 		<div class="background"><div class="quizcontainer">
 			
 			<div id="answerholder1">
@@ -22,7 +22,7 @@
 				<input type="radio" name="option" value="3" class="option">
 				<span class='answer'>Physalis pubescens</span><br>
 				<div id='buttonholder'>
-					<button>Submit answer</button>
+					<button class="submit">Submit answer</button>
 				</div>
 			</div>
 			
@@ -37,7 +37,7 @@
 				<input type="radio" name="option" value="3" class="option">
 				<span class='answer'>India</span><br>
 				<div id='buttonholder'>
-					<button>Submit answer</button>
+					<button class="submit">Submit answer</button>
 				</div>
 			</div>
 			<div id="answerholder3">
@@ -51,7 +51,7 @@
 				<input type="radio" name="option" value="3" class="option">
 				<span class='answer'>Turkey</span><br>
 				<div class='buttonholder'>
-					<button>Submit answer</button>
+					<button class="submit">Submit answer</button>
 				</div>
 			</div>
 			<div id="answerholder4">
@@ -65,12 +65,14 @@
 				<input type="radio" name="option" value="3" class="option">
 				<span class='answer'>Blueberries</span><br>
 				<div id='buttonholder'>
-					<button id="submit">Submit answer</button>
+					<button class="submit">Submit answer</button>
 				</div>
 			</div>
-
 			<div id="final-div"><h3>That's it! You answered <span id='finalnumber'>0</span> out of 4 questions correctly!</h3>
-			<div class="buttonholder"><button id='retry'>Play Again</button></div></div>
+			<div class="buttonholder"><button id='retry'>Play Again</button></div>
+
+			</div>
+			<div class="counter"><p>Score:<span id='num-correct'>0</span>/4</p></div>
 		</div>
 	</div>
 </div>

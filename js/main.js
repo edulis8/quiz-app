@@ -35,14 +35,17 @@ var currentQuestion= 0;
 
 //event listeners
 
-$('button#submit').click(function(event) {
+$('button.submit').click(function(event) {
 	if(currentQuestion < 4){
 		checkCorrectness();
 		postNewTotal();
 		currentQuestion++;
 		nextQuestion();
+		//console.log($("input[type='radio']:checked").val());
 	}
-	console.log(currentQuestion)
+
+	//console.log(currentQuestion)
+	//console.log(numberCorrect);
 });
 
 $('button#retry').click(function(event) {
@@ -58,14 +61,17 @@ $('button#retry').click(function(event) {
 
 function checkCorrectness(){
 
-	var answer = $("input[type='radio']:checked").val();
+	var answer = $('div#answerholder'+(currentQuestion+1)+" input[type='radio']:checked").val();
+
+	
 	var correctAnswer = questions[currentQuestion].correct;
 
+	//console.log(answer + ': div#answerholder'+(currentQuestion+1)+" input[type='radio']:checked");
 	
 
 	if(answer == correctAnswer){
 		numberCorrect++;
-		//console.log(numberCorrect);
+		//console.log("answer: "+answer+" correctAnswer "+ correctAnswer);
 	}
 }
 
@@ -92,6 +98,7 @@ function nextQuestion(){
 function retry(){
 	$('#final-div').hide();
 	$('div#answerholder1').show();
+	$('span#num-correct').html("0")
 
 
 }
