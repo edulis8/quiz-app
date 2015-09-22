@@ -35,7 +35,7 @@ var currentQuestion= 0;
 
 //event listeners
 
-$('button').click(function(event) {
+$('button#submit').click(function(event) {
 	if(currentQuestion < 4){
 		checkCorrectness();
 		postNewTotal();
@@ -43,6 +43,13 @@ $('button').click(function(event) {
 		nextQuestion();
 	}
 	console.log(currentQuestion)
+});
+
+$('button#retry').click(function(event) {
+	/* Act on the event */
+	numberCorrect=0;
+	currentQuestion=0;
+	retry();
 });
 
 
@@ -80,6 +87,13 @@ function nextQuestion(){
 		$('span#finalnumber').html(numberCorrect);
 		$('#final-div').show();
 	}
+}
+
+function retry(){
+	$('#final-div').hide();
+	$('div#answerholder1').show();
+
+
 }
 
 
