@@ -5,7 +5,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 
-  
+  position: relative;
 }
 
 h1 {
@@ -15,6 +15,7 @@ h1 {
 
 body {
 	font-family: Garamond, serif;
+	
 }
 
 .background {
@@ -39,7 +40,7 @@ body {
 	
 }
 
-#answerholder1, #answerholder2, #answerholder3, #answerholder4 {
+#answerholder1, #answerholder2, #answerholder3, #answerholder4, #final-div {
 	max-width: 200px;
 	margin: 0 auto;
 	text-align: left;
@@ -53,7 +54,7 @@ body {
 	display: block;
 }
 
-#answerholder2, #answerholder3, #answerholder4{
+#answerholder2, #answerholder3, #answerholder4, #final-div{
 	display: none;
 }
 
@@ -62,7 +63,7 @@ body {
 
 
 
-#buttonholder{
+.buttonholder{
 	text-align: center;
 }
 
@@ -70,6 +71,19 @@ button {
 	color: black;
 	border-radius: 5px;
 	margin-top: 10px;
+	text-align: center;
+	
+}
+
+div.counter {
+	background-color: ghostwhite;
+	width: 100px;
+	height: 52px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 120px;
+	text-align: center;
 	
 }
 
